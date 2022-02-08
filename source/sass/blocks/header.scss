@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 35px;
+}
+
+.header__phone-btn {
+  display: none;
+}
+
+.header__phone-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #585858;
+  padding-right: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/call.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    right: 0;
+    top: -5px;
+  }
+}
