@@ -1,0 +1,80 @@
+.services__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 154px;
+  grid-gap: 10px;
+}
+
+.services__card-title {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.1rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.services__card {
+  border-radius: 5px;
+  position: relative;
+  background-color: #444444;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8px 12px;
+  display: flex;
+  align-items: flex-end;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(25, 25, 25, 0) 53.07%, #191919 121.9%);
+    z-index: 1;
+  }
+
+  &_love {
+    background-image: url("../img/services/love.jpg");
+  }
+  &_teenager {
+    background-image: url("../img/services/teenager.jpg");
+    grid-row: 1/3;
+    grid-column: 2;
+  }
+  &_guy {
+    background-image: url("../img/services/guy.jpg");
+  }
+  &_group {
+    background-image: url("../img/services/group.jpg");
+    grid-column: 1;
+    grid-row: 3/5;
+  }
+  &_lookbook {
+    background-image: url("../img/services/lookbook.jpg");
+  }
+  &_animals {
+    background-image: url("../img/services/animals.jpg");
+  }
+  &_pair {
+    background-image: url("../img/services/pair.jpg");
+  }
+  &_family {
+    background-image: url("../img/services/family.jpg");
+    grid-column: 2;
+    grid-row: 5/7;
+  }
+  &_pregnant {
+    background-image: url("../img/services/pregnant.jpg");
+  }
+  &_business {
+    background-image: url("../img/services/business.jpg");
+  }
+  &_girl {
+    background-image: url("../img/services/girl.jpg");
+  }
+}
