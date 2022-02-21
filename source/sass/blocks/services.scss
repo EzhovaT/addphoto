@@ -38,6 +38,12 @@
     z-index: 1;
   }
 
+  &:hover {
+    &:before {
+      display: none;
+    }
+  }
+
   &_love {
     background-image: url("../img/services/love.jpg");
   }

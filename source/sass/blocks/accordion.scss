@@ -1,0 +1,14 @@
+.accordion {
+  overflow: hidden;
+}
+
+.accordion__button {
+  cursor: pointer;
+  outline: none;
+}
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+}
